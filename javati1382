@@ -1,10 +1,4 @@
 
---CheckIp
-ip = gg.makeRequest('http://www.getip.ir/').content
-
-if not ip then gg.alert('Please Turn On Internet') os.exit() end
-if string.find(ip, '5.125.53.220') == nil then gg.alert('Suck My Dick⚡️!!\n Orginal Version : @No_Pulse ') os.exit() end
-
 
 username = 'Jiwol'
 
