@@ -10,7 +10,7 @@ end
 
 HOME = 1
 function HOME()
-MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🚫EXIT"},nil,"  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in : 2022/10/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in : 2022/10/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
   if MultiMenu == nil then
   else
   if MultiMenu == 1 then
