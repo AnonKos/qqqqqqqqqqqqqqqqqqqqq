@@ -1,6 +1,7 @@
-
 username = 'sharlatan'
-gg.toast('کوص باید بدی حخخخخخ شارلاتان خانوم')
+
+SAMPMENU = 1
+
 while(true) do
 if gg.isVisible(true) then
 SAMPMENU = 1
@@ -8,6 +9,7 @@ gg.setVisible(false)
 end
 
 HOME = 1
+function HOME()
 MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in : 2022/10/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
   if MultiMenu == nil then
   else
@@ -80,7 +82,6 @@ function silentHead()
 	gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
 	gg.processResume()
 	gg.editAll("1,070,300,300", gg.TYPE_DWORD)
-	gg.alert(gg.getResultCount())
 	gg.toast("Cheat Active✅")
 	gg.clearResults()
 	silent()
@@ -106,7 +107,6 @@ data2 = 0
 	gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
 	gg.processResume()
 	gg.editAll("1,0"..tostring(range2)..",350,350", gg.TYPE_DWORD)
-	gg.alert(gg.getResultCount())
 	gg.toast("Cheat Active✅")
 	gg.clearResults()
 	silent()
@@ -188,7 +188,7 @@ EXIT()
 
 else
 
-if SAMPMENU  == 1 then HOME()
+if SAMPMENU  == 1 then HOME() gg.toast("Hello "..username)
 end
 
 end
