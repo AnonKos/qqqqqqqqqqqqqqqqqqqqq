@@ -90,7 +90,7 @@ function bc()
 end
 
 function exit()
-print("🔰𝐒𝐜𝐫𝐢𝐩𝐭 𝐁𝐘 【ᴀᴍɪʀ】")
+print("exit")
 gg.clearResults(9999999999)
 os.exit()
 end
