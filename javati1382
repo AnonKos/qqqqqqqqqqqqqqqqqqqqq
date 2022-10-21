@@ -1,6 +1,6 @@
+username = 'jiwol'
 
-
-username = 'Jiwol'
+SAMPMENU = 1
 
 while(true) do
 if gg.isVisible(true) then
@@ -188,7 +188,7 @@ EXIT()
 
 else
 
-if SAMPMENU  == 1 then HOME()
+if SAMPMENU  == 1 then HOME() gg.toast("Hello "..username)
 end
 
 end
