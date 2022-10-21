@@ -49,6 +49,12 @@ end
 function hc()
 revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
 	gg.editAll("2,587.837890625;-3,845.45336914062;8.09293651581", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("2,579.133300781;-3,845.45336914062;8.09293651581", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("2,570.543212890;-3,845.45336914062;8.09293651581", gg.TYPE_FLOAT)
 	gg.sleep(1500)
 	bc()
 end
