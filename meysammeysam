@@ -1,7 +1,7 @@
 username = 'meysamKK'
 active = 1
 function menu() 
-gg.toast('hello'..username)
+gg.toast('hello '..username)
 active = 0
 sim =gg.choice({"⚡️Go To Work","⚡️Start","⚡️Restart","⛔Exit⛔"},1,"  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in : 2022/10/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
 if sim == 1 then Aim() end
