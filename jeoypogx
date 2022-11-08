@@ -95,7 +95,7 @@ gg.clearResults(9999999999)
 os.exit()
 end
 
-dateEx = "20221030"
+dateEx = "20221130"
 
 while true do
 	if gg.isVisible(true) then
