@@ -1,0 +1,196 @@
+username = 'aresh'
+
+SAMPMENU = 1
+
+while(true) do
+if gg.isVisible(true) then
+SAMPMENU = 1
+gg.setVisible(false)
+end
+
+HOME = 1
+function HOME()
+MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in : 2022/10/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+  if MultiMenu == nil then
+  else
+  if MultiMenu == 1 then
+  silent()
+  end
+  if MultiMenu == 2 then
+  tp()
+  end
+  if MultiMenu == 3 then
+  gg.toast("Soon...")
+  end
+  if MultiMenu == 4 then
+        EXIT()
+  end
+  end
+SAMPMENU= -1
+end
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function EXIT()
+  gg.setVisible(true)
+  gg.toast("EXIT🚫")
+  gg.clearResults()
+  os.exit()
+end
+
+function silent()
+WH1 = gg.choice({
+	"🔫🦰SILENT【HEAD】",
+	"▶️🚶🏾‍♂️SILENT【BODY】",
+ "⁦⁦                            🔙『BACK』🔙",
+ }, nil,  "🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+if WH1 == 1 then 
+hahaha = gg.choice ({
+ '⌜ ᴏɴ ⌟',
+ '⌜ ᴏғғ ⌟',
+ ' ⟪ ʙᴀᴄᴋ ⟫ '},nil,'◤                                                       ◥\n               ◄ silent head ►               \n◣                                                       ◢') 
+
+if hahaha == 1 then silentHead() end
+if hahaha == 2 then silentHeadoff() end
+if hahaha == 3 then silent() end
+ end
+
+if WH1 == 2 then
+
+hah = gg.choice ({
+ '⌜ ᴏɴ ⌟',
+ '⌜ ᴏғғ ⌟',
+ ' ⟪ ʙᴀᴄᴋ ⟫ '},nil,'◤                                                       ◥\n               ◄ silent body ►               \n◣                                                       ◢') 
+
+if hah == 1 then silentBody() end
+if hah == 2 then silentBodyoff() end
+if hah == 3 then silent() end
+
+end
+
+if WH1 == 3 then HOME() end
+SAMPMENU = -1
+end
+
+
+
+
+
+-- on head
+function silentHead()
+    gg.processResume()
+    gg.searchNumber("1,042,536,202", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+	gg.processResume()
+	gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.processResume()
+	gg.editAll("1,070,300,300", gg.TYPE_DWORD)
+	gg.toast("Cheat Active✅")
+	gg.clearResults()
+	silent()
+	
+	
+  end
+  
+  
+  -- on body
+  function silentBody()
+data2 = 0
+  gg.setVisible(false)
+  settings2 = gg.prompt({
+				"type range: [0;10]"},
+						 {nil},
+									 {'number'})
+									
+    number2 = tonumber(settings2[1]) 
+    range2 = 60 + number2
+    gg.processResume()
+    gg.searchNumber("1,043,878,380", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+	gg.processResume()
+	gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.processResume()
+	gg.editAll("1,0"..tostring(range2)..",350,350", gg.TYPE_DWORD)
+	gg.toast("Cheat Active✅")
+	gg.clearResults()
+	silent()
+	
+  end
+  
+  
+-- off head
+function silentHeadoff()
+    gg.processResume()
+    gg.searchNumber("1,070,300,300", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+	gg.processResume()
+	gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.processResume()
+	gg.editAll("1,042,536,202", gg.TYPE_DWORD)
+	gg.toast("Cheat Deactive✅")
+	gg.clearResults()
+	silent()
+	
+end
+
+-- off body
+
+function silentBodyoff()
+    gg.processResume()
+    gg.searchNumber("1,0"..tostring(range2)..",350,350", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+	gg.processResume()
+	gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.processResume()
+	gg.editAll("1,043,878,380", gg.TYPE_DWORD)
+	gg.toast("Cheat Deactive✅")
+	gg.clearResults()
+	silent()
+
+
+
+
+end
+
+
+
+-- tp
+function tp()
+gg.setVisible(false)
+gg.setRanges(gg.REGION_C_ALLOC)
+ gg.searchNumber("0.0;1.0;0.0;1,376.5;67.0859375;0.0;0.0;0.0::33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+  if gg.getResultCount() == 19 then
+  gg.alert("TELEPORT faild")
+  else
+  gg.refineNumber("1,376.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+n1 = gg.getResultCount()
+ms1 = gg.getResults(n1)
+for MR_CHEAT = 1, n1 do
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 84, flags = 16, freeze = true, value = 2073.3 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 80, flags = 16, freeze = true, value = -1901.2 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 252, flags = 16, freeze = true, value = 2073.3 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 248, flags = 16, freeze = true, value = 1901.2 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 244, flags = 16, freeze = true, value = 13.5 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 76, flags = 16, freeze = true, value = 13.5 } })
+  gg.sleep(500)
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 84, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 80, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 76, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 252, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 248, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 244, flags = 16, freeze = false, value = 0 } })
+  gg.clearResults() 
+ gg.toast("Dmzone🎗")
+end
+end
+end
+
+dateEx = "20221130"
+
+if os.date("%Y%m%d") > dateEx then 
+
+gg.alert("🚫Ops!!\n🔰Script Expired, Please download last version in telegram id @No_Pulse")
+EXIT()
+
+else
+
+if SAMPMENU  == 1 then HOME() gg.toast("Hello "..username)
+end
+
+end
+
+end
