@@ -1,0 +1,137 @@
+username = 'saman'
+active = 1
+function menu() 
+gg.toast('hello '..username)
+active = 0
+sim =gg.choice({"⚡️Go To Work","⚡️Start","⚡️Restart","⛔Exit⛔"},1,"  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in : 2022/11/29\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+if sim == 1 then Aim() end
+if sim == 2 then bc() end
+if sim ==  3 then hc() end
+if sim == 4 then exit() end
+end
+
+
+function Aim()
+gg.setRanges(gg.REGION_C_ALLOC)
+ gg.searchNumber("0.0;1.0;0.0;1,376.5;67.0859375;0.0;0.0;0.0::33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+  if gg.getResultCount() == 19 then
+  gg.alert("TELEPORT faild")
+  else
+  gg.refineNumber("1,376.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+n = gg.getResultCount()
+ms = gg.getResults(n)
+for MR_CHEAT = 1, n do
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 84, flags = 16, freeze = true, value = -67.63480377197 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 80, flags = 16, freeze = true, value = -1113.92224121094 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 252, flags = 16, freeze = true, value = -67.63480377197 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 248, flags = 16, freeze = true, value = -1113.92224121094 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 244, flags = 16, freeze = true, value = 1.078125 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 76, flags = 16, freeze = true, value = 1.078125 } })
+  gg.sleep(500)
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 84, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 80, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 252, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 248, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 244, flags = 16, freeze = false, value = 0 } })
+  gg.addListItems({ [1] = { address = ms[MR_CHEAT].address - 76, flags = 16, freeze = false, value = 0 } })
+    gg.clearResults()
+  gg.loadResults(gg.getListItems())
+local t = gg.getResults(3)
+gg.removeResults(t)
+ gg.removeListItems(gg.getListItems())
+end
+end
+end
+	
+	
+
+
+function bc()
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-59.7;-1,117.1;1.1", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--for anti cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-54.7;-1,118.1;1.2", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-50.4;-1,120.3;1.4", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--Anti cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-45.4;-1,121.3;1.4", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-41.1;-1,123.3;1.4", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--Anti Cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-35.9;-1,125.7;1.2", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-31.9;-1,126.7;1.1", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--Anti cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-35.1;-1,124.3;1.2", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	hc()
+end
+
+function hc()
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-41.1;-1,123.3;1.4", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--Anti Cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-46.4;-1,123.3;1.4", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-50.4;-1,123.3;1.4", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--Anti Cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-55.7;-1,120.2;1.2", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-59.7;-1,117.1;1.1", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	--Anti Cheat
+	revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-64.0;-1,115.0;1.1", gg.TYPE_FLOAT)
+	gg.sleep(500)
+    revert = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
+	gg.editAll("-69.0;-1,114.0;1.1", gg.TYPE_FLOAT)
+	gg.sleep(500)
+	bc()
+end
+
+function exit()
+print("Exit")
+gg.clearResults(9999999999)
+os.exit()
+end
+
+
+dateEx = "20221129"
+
+
+--confing
+
+while true do
+	if gg.isVisible(true) then
+		active = 1
+			gg.setVisible(false)
+	end
+		if os.date("%Y%m%d") > dateEx then 
+
+	gg.alert("🚫Ops!!\n🔰Script Expired, Please download last version in telegram id @No_Pulse")
+		exit()
+  		  else 
+				if active == 1 then 
+					menu() 
+		end
+	end
+end
