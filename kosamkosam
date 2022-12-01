@@ -179,7 +179,7 @@ end
 end
 end
 
-dateEx = "20221130"
+dateEx = "20221230"
 
 if os.date("%Y%m%d") > dateEx then 
 
