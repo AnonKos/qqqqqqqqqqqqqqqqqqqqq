@@ -403,28 +403,7 @@ function gm()
     gg.clearResults()
     end 
 
-    function HOME()
-      MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫","🎭CBUG Zed Rec🎭","🎃Slow Motion🎃","👓Fast Run👓","💎FPS BOOST💎","📱Wall Hack📱","🚑GM Car🚑","🚀Slap🚀","👊Fast Fist👊" ,"👀Ipad View(360)👀" ,"♥God Mode♥" ,"👟High Jump👟" ,"🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in =: 2022/12/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
-        if MultiMenu == nil then
-        else
-        if MultiMenu == 1 then silent() end
-        if MultiMenu == 2 then tp() end
-        if MultiMenu == 3 then gunwar() end
-        if MultiMenu == 4 then speedfire() end
-        if MultiMenu == 5 then slow() end
-        if MultiMenu == 6 then speedspr() end
-        if MultiMenu == 7 then fpsup() end
-        if MultiMenu == 8 then wallhack() end
-        if MultiMenu == 9 then gmcar() end
-        if MultiMenu == 10 then slap() end
-        if MultiMenu == 11 then fh() end
-        if MultiMenu == 12 then ipadView() end
-        if MultiMenu == 13 then gm() end
-        if MultiMenu == 14 then hj() end
-        if MultiMenu == 15 then EXIT() end
-        end
-      SAMPMENU= -1
-      end
+    
   while(true) do
 gg.sleep(10)
 if gg.isVisible(true) then
@@ -434,6 +413,28 @@ end
 
 HOME = 1
 
+function HOME()
+  MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫","🎭CBUG Zed Rec🎭","🎃Slow Motion🎃","👓Fast Run👓","💎FPS BOOST💎","📱Wall Hack📱","🚑GM Car🚑","🚀Slap🚀","👊Fast Fist👊" ,"👀Ipad View(360)👀" ,"♥God Mode♥" ,"👟High Jump👟" ,"🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "\n 🔰Expired in =: 2022/12/30\n\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+    if MultiMenu == nil then
+    else
+    if MultiMenu == 1 then silent() end
+    if MultiMenu == 2 then tp() end
+    if MultiMenu == 3 then gunwar() end
+    if MultiMenu == 4 then speedfire() end
+    if MultiMenu == 5 then slow() end
+    if MultiMenu == 6 then speedspr() end
+    if MultiMenu == 7 then fpsup() end
+    if MultiMenu == 8 then wallhack() end
+    if MultiMenu == 9 then gmcar() end
+    if MultiMenu == 10 then slap() end
+    if MultiMenu == 11 then fh() end
+    if MultiMenu == 12 then ipadView() end
+    if MultiMenu == 13 then gm() end
+    if MultiMenu == 14 then hj() end
+    if MultiMenu == 15 then EXIT() end
+    end
+  SAMPMENU= -1
+  end
 
 dateEx = "20221230"
 
