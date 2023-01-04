@@ -438,7 +438,7 @@ function HOME()
 
 dateEx = "20230129"
 
-if 1 == 1then 
+if 1 == 2 then 
 
 gg.alert("expired")
 EXIT()
