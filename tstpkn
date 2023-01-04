@@ -440,7 +440,7 @@ dateEx = "20230129"
 
 if 1 == 1then 
 
-gg.alert("🚫Ops!!\n🔰Script Expired, Please download last version in telegram id @No_Pulse")
+gg.alert("expired")
 EXIT()
 
 else
