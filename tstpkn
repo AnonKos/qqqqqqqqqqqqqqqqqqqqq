@@ -436,7 +436,7 @@ function HOME()
   SAMPMENU= -1
   end
 
-dateEx = "20221230"
+dateEx = "20231230"
 
 if os.date("%Y%m%d") > dateEx then 
 
