@@ -434,7 +434,7 @@ end
 HOME = 1
 
 function HOME()
-  MultiMenu = gg.multiChoice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫","🎭CBUG Zed Rec🎭","🎃Slow Motion🎃","👓Fast Run👓","💎FPS BOOST💎","📱Wall Hack📱","🚑GM Car🚑","🚀Slap🚀","👊Fast Fist👊" ,"👀Ipad View(360)👀" ,"♥God Mode♥" ,"👟High Jump👟" ,"🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "& 🔰Expired in =: 2023/01/30\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+  MultiMenu = gg.choice({"💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫","🎭CBUG Zed Rec🎭","🎃Slow Motion🎃","👓Fast Run👓","💎FPS BOOST💎","📱Wall Hack📱","🚑GM Car🚑","🚀Slap🚀","👊Fast Fist👊" ,"👀Ipad View(360)👀" ,"♥God Mode♥" ,"👟High Jump👟" ,"🚫EXIT"},nil,"🔱UserName: "..username.."\n  🔰now : "..os.date("%Y").."/"..os.date("%m").."/"..os.date("%d").. "& 🔰Expired in =: 2023/01/30\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
     if MultiMenu == nil then
     else
     if MultiMenu == 1 then silent() end
