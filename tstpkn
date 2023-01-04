@@ -438,7 +438,7 @@ function HOME()
 
 dateEx = "20230129"
 
-if os.date("%Y%m%d") > dateEx then 
+if 1 == 1then 
 
 gg.alert("🚫Ops!!\n🔰Script Expired, Please download last version in telegram id @No_Pulse")
 EXIT()
