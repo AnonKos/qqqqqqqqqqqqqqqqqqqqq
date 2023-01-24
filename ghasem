@@ -1,0 +1,33 @@
+username = 'ghasem'
+
+
+
+function tp()
+    gg.setVisible(false)
+    gg.setRanges(gg.REGION_C_ALLOC)
+     gg.searchNumber("0.0;1.0;0.0;1,376.5;67.0859375;0.0;0.0;0.0::33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+      if gg.getResultCount() == 19 then
+      gg.alert("TELEPORT faild")
+      else
+      gg.refineNumber("1,376.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    n1 = gg.getResultCount()
+    ms1 = gg.getResults(n1)
+    for MR_CHEAT = 1, n1 do
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 84, flags = 16, freeze = true, value = 2579.83 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 80, flags = 16, freeze = true, value = -3820.7 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 252, flags = 16, freeze = true, value = 2579.83 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 248, flags = 16, freeze = true, value = 3820.7 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 244, flags = 16, freeze = true, value = 13.5 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 76, flags = 16, freeze = true, value = 13.65 } })
+      gg.sleep(500)
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 84, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 80, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 76, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 252, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 248, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms1[MR_CHEAT].address - 244, flags = 16, freeze = false, value = 0 } })
+      gg.clearResults() 
+     gg.toast('['..username..']'.." dmzone🎗")
+    end
+    end
+    end
